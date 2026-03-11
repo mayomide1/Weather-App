@@ -62,12 +62,13 @@ function Weather() {
   }
 
   return (
+    <div className="body">
     <div className='weather'>
       <div className='search-bar'>
         <input 
           ref={inputRef} 
           type="text" 
-          placeholder='Enter Location'
+          placeholder='Enter City/Location'
           onKeyDown={(e) => e.key === "Enter" && search(inputRef.current.value)}
         />
         <img
@@ -103,6 +104,7 @@ function Weather() {
           </div>
         </>
       )}
+    </div>
     </div>
   );
 }
