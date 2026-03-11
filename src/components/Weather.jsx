@@ -2,7 +2,7 @@ import React, { useRef, useState } from 'react';
 import './Weather.css';
 import search_icon from '../assets/search.png';
 import clear_icon from '../assets/clear.png';
-import cloud_icon from '../assets/cloud.png';
+import cloud_icon from '../assets/cloud.avif';
 import drizzle_icon from '../assets/drizzle.png';
 import humidity_icon from '../assets/humidity.png';
 import rain_icon from '../assets/rain.png';
@@ -13,7 +13,7 @@ function Weather() {
   const apiKey = '0202e41c6fc4ec6235226e81b63fbfcb';
 
   const inputRef = useRef(null);
-  const [weatherData, setWeatherData] = useState(null);
+  const [weatherData, setWeatherData] = useState(null); 
 
   const allIcons = {
     "01d": clear_icon,
@@ -67,8 +67,8 @@ function Weather() {
         <input 
           ref={inputRef} 
           type="text" 
-          placeholder='search'
-          onKeyDown={(e) => e.key === "Enter" && search(inputRef.current.value)} // press Enter to search
+          placeholder='Enter Location'
+          onKeyDown={(e) => e.key === "Enter" && search(inputRef.current.value)}
         />
         <img
           src={search_icon}
