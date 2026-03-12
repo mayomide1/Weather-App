@@ -8,8 +8,12 @@
 }
 
 .app{
-  width: 100vw;
-  min-height: 100vh;
-  display: grid;
+  padding: 50px;
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background: #e2d4ff;
 }
