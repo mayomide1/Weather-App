@@ -82,6 +82,7 @@
 @media (max-width: 768px) {
     
     .weather{
+        padding: 20px;
         width: 370px;
     }
 
@@ -95,6 +96,6 @@
     }
 
     .location{
-        font-size: 24px;
+        font-size: 22px;
     }
 }
